@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.js": "javascriptreact",
+        "*.html": "django-html",
+        "plyconfig.json": "jsonc"
+    }
+}

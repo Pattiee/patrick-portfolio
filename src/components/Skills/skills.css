@@ -1,0 +1,105 @@
+    #skills {
+        overflow: hidden;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: calc(100vh - 4rem);
+        max-width: 75rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    
+    .skillTitle {
+        font-size: 3rem;
+        /* font-weight: 600; */
+        /* padding-top: 3rem; */
+        margin-bottom: 1.5rem;
+    }
+    
+    .skillDesc {
+        font-weight: 300;
+        font-size: 1rem;
+        max-width: 45rem;
+        /* max-width: calc(100vw - 2rem); */
+    }
+    
+    #skills>.skillBars {
+        display: flex;
+        flex-direction: column;
+        /* margin: 1.5rem; */
+        padding: 0;
+        width: 75vw;
+        max-width: 75vw;
+        text-align: left;
+        /* background-color: red; */
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    
+    .skillBars>ul>.skillBar {
+        display: flex;
+        margin: 1rem auto;
+        padding: 1.5rem 2rem;
+        border-radius: 0.5rem;
+        background-color: var(--input-field-primary-color);
+        color: var(--input-field-secondary-color);
+    }
+    
+    .skillBarImg {
+        object-fit: cover;
+        height: 3rem;
+        width: 3rem;
+        margin-right: 2rem;
+    }
+    
+    .skillBarText>p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    
+    .card-footer {
+        /* background-color: var(--primary-color); */
+        color: var(--primary-color);
+    }
+    
+    @media screen and (max-width: 720px) {
+        .skillBarText>p {
+            font-size: 2vw;
+        }
+        #skills .skillBars {
+            display: flex;
+            min-width: 100vw;
+            padding: 0;
+            text-align: center;
+        }
+        #skills .skillBars ul .skillBar {
+            display: block;
+            /* flex-direction: column; */
+            padding: 0;
+            border-radius: 0.5rem;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            /* background-color: green; */
+            min-width: 100vw;
+            overflow: hidden;
+            align-self: center;
+            margin: 1rem auto;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .skillBarText>p {
+            font-size: 3vw;
+        }
+        .skillBarImg {
+            height: 2.25rem;
+            width: 2.25rem;
+        }
+        .skillBarText>h2 {
+            font-size: 5vw;
+        }
+    }

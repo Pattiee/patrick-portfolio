@@ -1,0 +1,141 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introContent img {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    /* flex-direction: column; */
+    scale: 1.5;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 5%;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: yellow;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn {
+    /* background: white; */
+    /* margin: 1rem 0; */
+    /* padding: 0.75rem 2rem; */
+    border: none;
+    border-radius: 2rem;
+    /* background-color: var(--secondary-color);
+    color: var(--primary-color); */
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button-container>.btn {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    border-radius: 100%;
+    /* justify-content: center; */
+    /* background-color: var(--secondary-color);
+    color: var(--primary-color); */
+}
+
+
+/* Media Screen max-width: 840px*/
+
+@media screen and (max-width:840px) {
+    .bg {
+        right: -10vw;
+    }
+    .introContent {
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+    .introContent>div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+
+/* Media Screen max-width: 480px*/
+
+@media screen and (max-width:480px) {
+    .bg {
+        right: -20vw;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .button-container {
+        /* display: flex; */
+        justify-content: space-between;
+        padding: 0;
+        flex-direction: row;
+    }
+    .button-container>.btn {
+        /* border: 1px solid black; */
+        display: flex;
+        /* align-items: center; */
+        flex-direction: row;
+        /* margin-top: 1.5rem; */
+        /* border-radius: 100%; */
+        justify-content: center;
+        /* background-color: var(--secondary-color); */
+        /* color: var(--primary-color); */
+        padding: 0;
+        margin: 0;
+        width: max-content;
+    }
+}

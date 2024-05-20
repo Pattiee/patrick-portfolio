@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #692d2d;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Variable declarations */
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+    --my-orange: orange;
+    --buttons-color: green;
+    --input-field-primary-color: white;
+    --input-field-secondary-color: #111111;
+}
+
+.dark-theme {
+    --primary-color: #000106;
+    --secondary-color: #fff;
+    --input-field-primary-color: #111111;
+    --input-field-secondary-color: white;
+}
+
+.App {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 720px) {
+     :root {}
+    .App {
+        overflow: hidden;
+        width: 100vw;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+}
